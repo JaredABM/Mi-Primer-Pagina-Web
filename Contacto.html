@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario 2</title>
+<style type="text/css">
+h1 {
+	font-size: 36px;
+	color: #06F;
+}
+.contac {
+	color: #0080FF;
+}
+body {
+	background-image: url(../../Documents/My%20Web%20Sites/Prog%20Web/t4.jpg);
+}
+.s {
+	color: #400080;
+}
+</style>
+</head>
+
+<body>
+<h1 class="contac"> <span class="s">CONTACTAME</span></h1>
+<form name="formulario" action="mailto:destino@servidor.com?subject=prueba" method="post" enctype="multipart/form-data">
+<fieldset>
+<legend>Datos generales
+</legend><table width=740 border=0 cellpadding=5>
+<tr>
+<td align="right" width=164><u>N</u>ombre:
+</td>
+<td colspan=3>
+<input type="text" name="nombre_usuario" size=20 maxlength=50 tabindex=1 accesskey="n">
+</td>
+<td width=122 align="right"><u>C</u>lave:
+</td>
+<td width=77>
+<input type="password" name="clave" size=10 maxlength=25 tabindex=2 accesskey="c">
+</td>
+</tr>
+<tr>
+<td align="right" width=164>
+<u>O</u>pine sobre la p&aacute;gina:
+</td>
+<td rowspan=2 colspan=3>
+<textarea name="opinion" cols=30 rows=5 wrap="virtual" tabindex=3 accesskey="o">
+</textarea>
+</td>
+<td rowspan=2 colspan=2><img src="../../Documents/My Web Sites/Prog Web/Contacto (1).gif" width="232" height="247" alt="c2" /></td>
+</tr>
+<tr>
+<td width=164>&nbsp;
+
+</td>
+</tr>
+<tr>
+<td align="right" width=164>
+<u>M</u>ayor de edad:
+</td>
+<td width=80>
+<input type="checkbox" name="adulto" value"si" checked tabindex=4 accesskey="m">
+</td>
+<td width=101 align="right">Masculino </td>
+<td width=115>
+<input type="radio" name"sexo" value="m" checked tabindex=5
+accesskey="s">
+</td>
+<td width=122 align="right">
+Soltero(a)
+</td>
+<td width=77>
+<input type="radio" name"sueldo" value"10" checked tabindex=7 accesskey="i">
+</td>
+</tr>
+<tr>
+<td width=164>&nbsp;
+
+</td>
+<td width=80>&nbsp;
+
+</td>
+<td align="right" width=101>
+Femenino
+</td>
+<td width=115>
+<input type="radio" name="sexo" value="f" taindex=6>
+</td>
+<td width=122 align="right">
+Casado(a)
+</td>
+<td width=77>
+<input type="radio" name="sueldo" value="1020" taindex=8>
+</td>
+</tr>
+<tr>
+<td width=164>&nbsp;
+
+</td>
+<td colspan=3>&nbsp;
+
+</td>
+<td width=122 align="right">Viudo(a)</td>
+<td width=77>
+<input type="radio" name"sueldo" value="20" tabindex=9>
+</td>
+</tr>
+<tr>
+<td align="right" height=7 width=164>
+Env&iacute;e sus datos:
+</td>
+<td height=7 colspan=3>
+<input type="file" name="archivo" size=30 maxlength=100 tabindex=10 accesskey="f">
+</td>
+<td colspan=2 height=7>&nbsp;
+
+</td>
+</tr>
+</table>
+</fieldset>
+<fieldset>
+<legend>Otros datos</legend>
+<table width=740 border=0 cellpadding=5>
+<tr>
+<td align="right" rowspan=2 valign="top" width=164>Nacionalidad:
+</td>
+<td width=80 rowspan=2 valign="top">
+<select name="provincia" tabindex=11 accesskey="p">
+<option value="1">Puebla</option>
+<option value="2">Oaxaca</option>
+<option value="3">Monterrey</option>
+<option value="4">Veracruz</option>
+<option value="5">Chiapas</option>
+<option value="6">Guadalajara</option>
+</select>
+</td>
+<td width=101 align="right"><u>H</u>obbies:
+</td>
+<td width=115 rowspan=2>
+<select name="pasatiempo" size=3 multiple tabindex=12 accesskey="h">
+<option value="1">Chat</option>
+<option value="2" selected="selected">Juegos</option>
+<option value="3">Fútbol</option>
+<option value="4">Box</option>
+<option value="5">Fiestas</option>
+<option value="6">Otros</option>
+</select>
+</td>
+<td colspan=2 rowspan=2>&nbsp;
+
+</td>
+</tr>
+<tr>
+<td width=101>&nbsp;
+
+</td>
+</tr>
+<tr>
+<td colspan=4>
+<input type="submit" name="mandar" value="Enviar" tabindex=13>
+</td>
+<td colspan=2>
+<input type="reset" name="borrado" value="Borrar" tabindex=14>
+</td>
+</tr>
+</table>
+<p>
+  <input type="hidden" name="escondido" value="oculto">
+</p>
+<p><img src="../../Documents/My Web Sites/Prog Web/contacto.gif" width="298" height="258" alt="contact" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</fieldset>
+</form>
+</body>
+</html>
